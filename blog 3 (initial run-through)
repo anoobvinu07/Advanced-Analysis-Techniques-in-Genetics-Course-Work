@@ -54,7 +54,7 @@ Error: unexpected ',' in "pop_1 = data.frame(population = "Pop_1"),"
 > pop_1 = data.frame(population = "Pop_1") genotype = sample(c("AA", "Aa", "aa"), size = 20, replace = TRUE, prob = c(p_1^2, 2 * p_1 * q_1, q_1^2)))
 Error: unexpected symbol in "pop_1 = data.frame(population = "Pop_1") genotype"
 
-> # :/ yay, syntax
+> # yay, syntax
 > set.seed(42)
 > 
 > # Population 1: 20 individuals; allele A frequency p = 0.80
@@ -201,13 +201,12 @@ Error: object 'oops' not found
 > p_A_2 + q_A_2
 AA 
  1 
-> #...misnamed q as A instead of a :/
+> #...misnamed q as A instead of a
 > 
 > q_A_2 = "q_a_2"
 > p_A_2 + q_a_2
 Error: object 'q_a_2' not found
 
-> :/
 Error: unexpected ':' in ":"
 
 > 
@@ -292,7 +291,7 @@ Error in plot.new() : figure margins too large
 Error: object 'pch' not found
 
 > plot(pca_sim$x[, 1], pca_sim$x[, 2], pch = 19, xlab = "PC1", ylab = "PC2", main = "Simulated genotype PCA")
-> # :D!! yay
+> #
 > #Needed to add pch (plotting character value) to determine point size/type? Solved margin issue. 
 > #For future reference: value changes size or sahpe; 8 can result in a star while "" can let you set the symbol for the plot points
 > 
